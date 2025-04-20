@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaishali Gupta | Portfolio CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #f3f3f3;
+    }
+
+    nav {
+      width: 220px;
+      background: rgba(0,0,0,0.85);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 30px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      margin: 25px 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #eee;
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00e5ff;
+      transform: scale(1.05);
+    }
+
+    .content {
+      margin-left: 240px;
+      padding: 50px 40px;
+      width: calc(100% - 240px);
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 50px;
+      animation: fadeInDown 2s;
+    }
+
+    .intro h1 {
+      font-size: 2.6rem;
+      color: #ffffff;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .section {
+      margin-bottom: 60px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      color: #00e5ff;
+      border-bottom: 2px solid rgba(0,229,255,0.3);
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 20px;
+      border-radius: 14px;
+      transition: 0.4s ease;
+      box-shadow: 0 0 10px rgba(0,229,255,0.15);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,229,255,0.25);
+      border-color: rgba(0,229,255,0.5);
+    }
+
+    .timeline {
+      border-left: 2px solid #00e5ff;
+      padding-left: 25px;
+      margin-top: 20px;
+    }
+
+    .event {
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .event::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: #00e5ff;
+      border-radius: 50%;
+      position: absolute;
+      left: -7px;
+      top: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.85rem;
+      color: #aaa;
+      margin-top: 50px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="#languages">Languages</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+
+  <section class="intro">
+    <h1>Hi, I'm Vaishali Gupta</h1>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>A curious mind at the intersection of data, creativity, and business — decoding numbers to drive real-world impact with strategy and heart. Passionate about data and business strategy, I am driven by curiosity and creative thinking. Whether it’s a spreadsheet or a brainstorming room — I bring structured thinking, empathy, and design-centric solutions to the table.</p>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="card-grid">
+      <div class="card">Class 10th — CBSE | 76%</div>
+      <div class="card">Class 12th — CBSE | 88%</div>
+      <div class="card">BBA (DBE) — Indian Institute of Management Bangalore (2024-27)</div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <div class="timeline">
+      <div class="event">Selected for IIM Bangalore — BBA (DBE)</div>
+      <div class="event">AIR 45 in NFAT 2024, NFSU Gandhinagar (BBA-MBA)</div>
+      <div class="event">Interview Call: IIM Rohtak (BBA-MBA)</div>
+      <div class="event">Selected: IIM Jammu, Bodh Gaya, NFSU Gandhinagar (BBA-MBA)</div>
+      <div class="event">Nova Fest 2024 — Special Mention (Situationship Event)</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="card-grid">
+      <div class="card">₹250 Venture — A real-world entrepreneurial challenge to turn ₹250 into maximum value using innovation and business strategy.</div>
+      <div class="card">Data Insight Project — Creating actionable dashboards using Power BI & Excel for deep market analysis and visualization.</div>
+      <div class="card">Business Strategy Challenge — Strategic decision-making for growth simulations in competitive market scenarios.</div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="card-grid">
+      <div class="card">Data Analysis</div>
+      <div class="card">Power BI</div>
+      <div class="card">Advanced Excel</div>
+      <div class="card">Strategic Communication</div>
+      <div class="card">Agile Leadership</div>
+      <div class="card">Creative Problem Solving</div>
+      <div class="card">Lateral Thinking</div>
+      <div class="card">Critical Thinking</div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <div class="card-grid">
+      <div class="card">AI & Data-Driven Decision Making</div>
+      <div class="card">Power BI Certified</div>
+      <div class="card">Data Analysis</div>
+    </div>
+  </section>
+
+  <section id="interests" class="section">
+    <h2>Hobbies & Interests</h2>
+    <div class="card-grid">
+      <div class="card">Painting — Watercolors</div>
+      <div class="card">Reading — Fiction and Sci-Fi</div>
+      <div class="card">Cooking & Exploring Cuisines</div>
+      <div class="card">Listening Music</div>
+      <div class="card">Gardening</div>
+    </div>
+  </section>
+
+  <section id="languages" class="section">
+    <h2>Languages</h2>
+    <div class="card-grid">
+      <div class="card">Hindi — Native</div>
+      <div class="card">English — Fluent</div>
+      <div class="card">Spanish — Proficient</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Vaishali Gupta — Portfolio CV
+  </footer>
+
+</div>
+
+</body>
+</html>
